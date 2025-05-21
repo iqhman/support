@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>One Humanity: Stand for Ukraine</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -68,42 +69,44 @@
       text-align: center;
       padding: 20px;
     }
-  </style>
-</head>
-<body>
 
-<select>
-  <h1 id="title">Translate</h1>
-  <p id="description">This is a multilingual website.</p>
+    <select>
+      <h1 id="title">Translate</h1>
+      <p id="description">This is a multilingual website.</p>
 
-  <label for="language">Choose Language:</label>
-  <select id="language" onchange="translatePage()">
-    <option value="en">English</option>
-    <option value="es">Español</option>
-    <option value="fr">Français</option>
-  </select>
-
-  <script>
+      <label for="language">Choose Language:</label>
+      <select id="language" onchange="translatePage()">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+    </select>
+  
     const translations = {
       en: {
         title: "Translate",
         description: "This is a multilingual website."
-      },
+          },
       es: {
         title: "Bienvenido",
         description: "Este es un ejemplo de sitio web multilingüe."
-      },
+          },
       fr: {
         title: "Bienvenue",
         description: "Ceci est un exemple de site Web multilingue."
-      }
-    };
+          }
+      };
 
     function translatePage() {
       const lang = document.getElementById("language").value;
       document.getElementById("title").innerText = translations[lang].title;
       document.getElementById("description").innerText = translations[lang].description;
-    }
+      }
+    
+  </style>
+  
+</head>
+
+<body>
 
   <header>
     <h1>Give Hope. Heal Lives. Help Ukraine.</h1>
@@ -173,6 +176,6 @@
   <footer>
     <p>&copy; 2025 One Humanity. All rights reserved.</p>
   </footer>
-    </script>
+  
 </body>
 </html>
