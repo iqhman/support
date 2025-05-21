@@ -72,6 +72,7 @@
 </head>
 <body>
 
+<select>
   <h1 id="title">Translate</h1>
   <p id="description">This is a multilingual website.</p>
 
@@ -85,8 +86,8 @@
   <script>
     const translations = {
       en: {
-        title: "Welcome",
-        description: "This is a multilingual website example."
+        title: "Translate",
+        description: "This is a multilingual website."
       },
       es: {
         title: "Bienvenido",
@@ -103,7 +104,6 @@
       document.getElementById("title").innerText = translations[lang].title;
       document.getElementById("description").innerText = translations[lang].description;
     }
-  </script>
 
   <header>
     <h1>Give Hope. Heal Lives. Help Ukraine.</h1>
@@ -173,5 +173,6 @@
   <footer>
     <p>&copy; 2025 One Humanity. All rights reserved.</p>
   </footer>
+    </script>
 </body>
 </html>
