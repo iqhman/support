@@ -179,6 +179,9 @@
       const lang = document.getElementById("language").value;
       document.getElementById("title").innerText = translations[lang].title;
       document.getElementById("description").innerText = translations[lang].description;
+      document.getElementById("section").innerText = translations[lang].section;
+      document.getElementById("footer").innerText = translations[lang].footer;
+      document.getElementById("header").innerText = translations[lang].header;
     }
   </script>
 </body>
